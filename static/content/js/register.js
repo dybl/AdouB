@@ -7,7 +7,7 @@ $(function(){
     var initPage = function() {
  
         // Load the HTML template
-        $.get("/templates/login.html", function(d){
+        $.get("/templates/register.html", function(d){
             tmpl = d;
         });
 
