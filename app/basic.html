@@ -1,28 +1,305 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AdouB</title>
- 
-  <!-- Meta -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./content/style.css"
-        type="text/css" />
-        <link rel="stylesheet" href="./content/bootstrap.min.css"
-        type="text/css" />
- 
-  <!-- javascripts -->
-  <script src="./content/jquery-1.8.3.min.js"
-          type="text/javascript"></script>
-  <script src="./content/mustache.js"
-          type="text/javascript"></script>
-  <script src="./content/{{PAGE_NAME}}.js"
-          type="text/javascript"></script>		
-</head>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <!-- gallery -->
+    <link rel="stylesheet" href="http://localhost:8080/content/css/lightGallery.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/content/css/component.css" />
+    <!-- //gallery -->
+    <link href="http://localhost:8080/content/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+    <link href="http://localhost:8080/content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin-ext,vietnamese"
+      rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+      <!--Start-slider-script-->
+      <script type="text/javascript">
+      $(window).load(function () {
+      $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+      $('body').removeClass('loading');
+      }
+      });
+      });
+      </script>
+      
+    </head>
+    <!-- Head -->
+    <!-- Body -->
+    <body>
+      <!-- Slider -->
+  <div class="w3-banner-info-agile">
+    <div class="slider w3layouts agileits">
+      <ul class="rslides w3layouts agileits" id="slider">
+        <li>
+          <div class="layer w3layouts agileits-banner">
+            <h3>建站.指南</h3>
+            <p>关于本站从无到有的一系列总结</p>
+            <a href="#" onMouseOver="javascript:this.innerHTML=('更多')" onMouseOut="javascript:this.innerHTML=('read more')">read more</a>
+          </div>
+        </li>
+        <li>
+          <div class="layer w3layouts agileits-banner agileits-banner1">
+            <h3>词云·分析</h3>
+            <p>提供基于python的个性化词云定制</p>
+            <a href="#" onMouseOver="javascript:this.innerHTML=('更多')" onMouseOut="javascript:this.innerHTML=('read more')">read more</a>
+          </div>
+        </li>
+        <li>
+          <div class="layer w3layouts agileits-banner agileits-banner2">
+            <h3>项目·源码</h3>
+            <p>直接右键查看源代码吧，server端的私发邮件给我</p>
+            <a href="#" onMouseOver="javascript:this.innerHTML=('更多')" onMouseOut="javascript:this.innerHTML=('read more')">read more</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- //Slider -->
+  <!-- banner -->
+  <div class="banner" id="home">
+    <!-- <div class="container"> -->
+    <nav class="navbar navbar-default cl-effect-5" id="cl-effect-5">
+      <div class="navbar-header navbar-left">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h1>
+          <a class="navbar-brand" href="index.html">AdouB</a>
+        </h1>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" onMouseOver="javascript:this.innerHTML=('首页')" onMouseOut="javascript:this.innerHTML=('Home')">
+              <span data-hover="Home">Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="scroll" href="#services" onMouseOver="javascript:this.innerHTML=('关于我')" onMouseOut="javascript:this.innerHTML=('About Me')">
+              <span data-hover="About">About</span>
+            </a>
+          </li>
+          <li>
+            <a class="scroll" href="#gallery" onMouseOver="javascript:this.innerHTML=('博客')" onMouseOut="javascript:this.innerHTML=('Blog')">
+              <span data-hover="Blog">Blog</span>
+            </a>
+          </li>
+          <li>
+            <a class="scroll" href="/game/game.html" onMouseOver="javascript:this.innerHTML=('游戏')" onMouseOut="javascript:this.innerHTML=('Game')">
+              <span data-hover="Game">Game</span>
+            </a>
+          </li>
+          <li>
+            <a class="scroll" href="#contact" onMouseOver="javascript:this.innerHTML=('下载')" onMouseOut="javascript:this.innerHTML=('Download')">
+              <span data-hover="Download">Download</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <!-- </div> -->
 
-<body>
-</body>
-
-</html>
-
+    <ul class="top-links">
+      <li>
+        <a href="#">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://weibo.com/p/1005056028703260/home?from=page_100505&mod=TAB&is_all=1#place">
+          <i class="fa fa-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/dybl">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- //banner -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="agile-footer-grids">
+            <div class="col-md-4 w3-agile-footer-grid">
+              <h3>Newsletter</h3>
+              <form action="#" method="post">
+                <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+            <div class="col-md-4 w3-agile-footer-grid">
+              <h3>Navigation</h3>
+              <ul>
+                <li>
+                  <a href="#home" class="scroll">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll">About</a>
+                </li>
+                <li>
+                  <a href="#blog" class="scroll">Blog</a>
+                </li>
+                <li>
+                  <a href="#game" class="scroll">Game</a>
+                </li>
+                <li>
+                  <a href="#download" class="scroll">Download</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 w3-agile-footer-grid">
+              <h3>Follow me :</h3>
+              <div class="footer-social-grids">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; 2017 powerd by Junkie.Chan.</p>
+        </div>
+      </div>
+      <!-- //footer -->
+      
+      <!-- Default-JavaScript-File -->
+      <script src="http://localhost:8080/content/js/jquery-2.1.4.min.js"
+      type="text/javascript"></script>
+      <script src="http://localhost:8080/content/js/mustache.js"
+      type="text/javascript"></script>
+      <script src="http://localhost:8080/content/js/{{PAGE_NAME}}.js"
+      type="text/javascript"></script>
+      <script type="text/javascript" src="http://localhost:8080/content/s/bootstrap.min.js"></script>
+      <!-- Slider-JavaScript -->
+      <script src="http://localhost:8080/content/js/responsiveslides.min.js"></script>
+      <script>
+      $(function () {
+      $("#slider, #slider1").responsiveSlides({
+      auto: true,
+      nav: true,
+      speed: 1500,
+      namespace: "callbacks",
+      pager: true,
+      });
+      });
+      </script>
+      <!-- //Slider-JavaScript -->
+      <!-- //Default-JavaScript-File -->
+      <script type="text/javascript">
+      $(window).load(function () {
+      $("#flexiselDemo1").flexisel({
+      visibleItems: 4,
+      animationSpeed: 1000,
+      autoPlay: true,
+      autoPlaySpeed: 3000,
+      pauseOnHover: true,
+      enableResponsiveBreakpoints: true,
+      responsiveBreakpoints: {
+      portrait: {
+      changePoint: 480,
+      visibleItems: 1
+      },
+      landscape: {
+      changePoint: 640,
+      visibleItems: 2
+      },
+      tablet: {
+      changePoint: 768,
+      visibleItems: 3
+      }
+      }
+      });
+      });
+      </script>
+      <script type="text/javascript" src="http://localhost:8080/content/js/jquery.flexisel.js"></script>
+      <script src="http://localhost:8080/content/js/lightGallery.js"></script>
+      <script>
+      $(document).ready(function () {
+      $("#lightGallery").lightGallery({
+      mode: "fade",
+      speed: 800,
+      caption: true,
+      desc: true,
+      mobileSrc: true
+      });
+      });
+      </script>
+      <!-- start-smoth-scrolling -->
+      <script type="text/javascript" src="http://localhost:8080/content/js/move-top.js"></script>
+      <script type="text/javascript" src="http://localhost:8080/content/js/easing.js"></script>
+      <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+      event.preventDefault();
+      $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+      }, 1000);
+      });
+      });
+      </script>
+      <!-- start-smoth-scrolling -->
+      <!-- smooth scrolling -->
+      <script type="text/javascript">
+      $(document).ready(function () {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({
+      easingType: 'easeOutQuart'
+      });
+      });
+      </script>
+      <a href="#" id="toTop" style="display: block;">
+        <span id="toTopHover" style="opacity: 1;"> </span>
+      </a>
+      <!-- //smooth scrolling -->
+    </body>
+    <!-- //Body -->
+  </html>
