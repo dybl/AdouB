@@ -1,0 +1,29 @@
+{
+  "name": "adoub",
+  "version": "1.0.0",
+  "description": "A WebServer Using Express,Vue,MongoDB and MariaDB",
+  "main": "./app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dybl/AdouB.git"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "express": "^4.16.2",
+    "generic-pool": "^3.2.0",
+    "mongodb": "^2.2.33",
+    "mustache": "^2.3.0",
+    "nginx-conf": "^1.3.1",
+    "uuid": "^3.1.0"
+  },
+  "author": "Junkie Chan",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dybl/AdouB/issues"
+  },
+  "homepage": "https://github.com/dybl/AdouB#readme"
+}
